@@ -8,7 +8,7 @@ use stdClass;
 
 use frdlweb\Api\Rpc\DiscoverMethod;
 
-class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscoverableInterface
+abstract class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscoverableInterface
 {
 
 
