@@ -12,6 +12,24 @@ abstract class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscov
 {
 
 
+  
+ public function getSpec(): ?\stdClass
+    {
+        return \json_decode(<<<'JSON'
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": ["array"],
+  "minItems": 1,
+  "maxItems": 1,
+  "items": { "type": ["string"] }
+}
+JSON
+							
+
+
+							
+        );
+    }
  
 public function getResultSpec(): ?\stdClass
     {
