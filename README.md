@@ -1,5 +1,5 @@
 # OID Whois JSON-RPC Method
-This is an abstract base class providing a `getResultSpec` Method returning the JSON-Schema of the OID-Whois-Look-Up-Result of a request to the OIDPLus API.
+This is an abstract base class providing a `getResultSpec` Method returning the JSON-Schema of the OID-Whois-Look-Up-Result of a request to the [OIDPlus API](https://oidplus.viathinksoft.com/oidplus/?goto=oidplus%3Awhois).
 
 ````PHP
 <?php
