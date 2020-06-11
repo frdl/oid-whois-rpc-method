@@ -14,6 +14,8 @@ abstract class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscov
 
  /**
  *  returns the expected JSON-RPC 2.0 Request Parameters Member as JSON-Schema
+ *  In this case positional arguments are required with only one element: the OID or the query
+ *  @ToDo (in the __invoke Method): - Validate the input parameter, e.g.: /^[0-9\.]+$/
  */
  public function getSpec(): ?\stdClass
     {
