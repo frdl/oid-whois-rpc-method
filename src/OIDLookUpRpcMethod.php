@@ -13,7 +13,7 @@ abstract class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscov
 
 
  
-public function getSpec(): ?\stdClass
+public function getResultSpec(): ?\stdClass
     {
         return \json_decode('
 {
