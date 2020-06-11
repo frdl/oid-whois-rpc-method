@@ -12,7 +12,9 @@ abstract class OIDLookUpRpcMethod extends DiscoverMethod implements MethodDiscov
 {
 
 
-  
+ /**
+ *  returns the expected JSON-RPC 2.0 Request Parameters Member as JSON-Schema
+ */
  public function getSpec(): ?\stdClass
     {
         return \json_decode(<<<'JSON'
@@ -31,6 +33,12 @@ JSON
         );
     }
  
+	
+	
+	
+ /**
+ *  returns the valid JSON-RPC 2.0 Response Result Member as JSON-Schema
+ */	
 public function getResultSpec(): ?\stdClass
     {
         return \json_decode('
