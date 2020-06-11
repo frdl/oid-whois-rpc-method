@@ -1,0 +1,15 @@
+{
+  "name" : "frdl/oid-whois-rpc-method",
+  "type" : "library",
+  "description": "OID Repository Look-Up JSON-RPC Method",	  
+  "license": ["MIT"],	  
+  "require" : {
+	  "php": ">=7.2",
+		"frdl/json-rpc-server-dicoverable" : "*",
+    "frdl/event-module" : "*"
+  },	  
+  "autoload": {
+        "psr-4": {
+            "frdlweb\\Api\\Whois\\OID\\": "src/"
+        }
+  }  
