@@ -1,12 +1,30 @@
 {
   "name" : "frdl/oid-whois-rpc-method",
-  "type" : "library",
   "description": "OID Repository Look-Up JSON-RPC Method",	  
-  "license": ["MIT"],	  
+  "license": ["MIT"],
+  "homepage" : "https://oidplus.viathinksoft.com/oidplus/?goto=oid%3A1.3.6.1.4.1.37476.9000.108.4",
+  "authors": [
+        {
+            "name": "Daniel Marschall",
+            "homepage": "https://www.viathinksoft.com",
+            "role": "Maintainer"
+        },
+
+        {
+            "name": "Till Wehowski",
+            "homepage": "https://packages.frdl.de",
+            "role": "Developer"
+        }	
+    ],	
+
+  "repositories": [{
+    "type": "composer",
+    "url": "https://packages.frdl.de"
+  }],	
   "require" : {
-	  "php": ">=7.2",
-		"frdl/json-rpc-server-dicoverable" : "*",
-    "frdl/event-module" : "*"
+	  "php": ">=7.2",		
+	  "frdl/json-rpc-server-dicoverable" : "*", 
+	  "frdl/event-module" : "*"
   },	  
   "autoload": {
         "psr-4": {
